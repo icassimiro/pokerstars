@@ -76,7 +76,7 @@ export default function Login() {
           >
             LOGIN
           </button>
-          <h3 className="text">Don't Have an Account?</h3>
+          <h3 className="text">Don't have an account?</h3>
           <button className="btn1" value={register} onClick={handleRegister}>
             SIGN UP HERE
           </button>
