@@ -3,7 +3,7 @@
   margin: 0;
   background-color: rgb(17, 17, 17);
   color: whitesmoke;
-  font-family: lato;
+  font-family: sans-serif;
 }
 
 .title {
@@ -12,9 +12,11 @@
   display: flex;
   justify-content: center;
 }
+
 .all {
   display: flex;
 }
+
 .a {
   width: 50%;
   height: 90vh;
@@ -26,11 +28,13 @@
 .logo {
   animation: flip 1s alternate infinite ease-in-out;
 }
+
 .b {
   width: 50%;
   height: 90vh;
   display: inline-block;
 }
+
 .loginbox {
   width: 40%;
   height: 60vh;
@@ -42,10 +46,10 @@
   gap: 2rem;
   margin-left: 4rem;
 }
+
 .input {
   width: 70%;
   height: 5vh;
-
   margin-left: 3rem;
   border: none;
   border-radius: 3px;
@@ -66,13 +70,13 @@
   margin-left: 6rem;
   margin-top: 3rem;
   background-color: rgb(129, 129, 129);
-  font-weight: bold;
-
   font-size: large;
   border-radius: 5px;
-  color: rgb(0, 0, 0);
+  color: whitesmoke;
   cursor: pointer;
+  border: none;
 }
+
 .btn1 {
   width: 75%;
   height: 6vh;
@@ -83,17 +87,30 @@
   color: black;
   border-radius: 5px;
   border: none;
-  font-weight: bold;
   cursor: pointer;
 }
 
 .text {
-  margin-left: 4.2rem;
-
-  font-size: 25px;
+  margin-left: 4.9rem;
+  font-size: 22px;
   margin-top: 2rem;
   color: rgb(177, 177, 177);
+  display: flex;
 }
+
+.errordiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 3vh;
+}
+
+.errormessage {
+  color: red;
+  font-size: 21px;
+  margin-right: 1rem;
+}
+
 @keyframes flip {
   0% {
     transform: rotateY(0);

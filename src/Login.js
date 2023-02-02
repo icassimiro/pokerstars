@@ -1,6 +1,47 @@
 import logo from "./images/logo.png";
+import React, { useState } from "react";
+import { LoginPromise } from "./LoginPromise";
 
-const Login = () => {
+export default function Login() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState(null);
+  const [isRequesting, setIsRequesting] = useState(false);
+  const [register, setRegister] = useState("");
+
+  const handleEmail = (event) => {
+    const { value } = event.target;
+    setEmail(value);
+  };
+
+  const handlePassword = (event) => {
+    const { value } = event.target;
+    setPassword(value);
+  };
+
+  const handleRegister = (event) => {
+    const { value } = event.target;
+    setRegister(value);
+    console.log("Sign up here.");
+  };
+
+  const handleSubmit = () => {
+    console.log("submit");
+    setError(null);
+    setIsRequesting(true);
+
+    let values = { email: email, password: password };
+    LoginPromise(values)
+      .then(() => {
+        alert("Login efetuado com sucesso.");
+        console.log("sucesso");
+      })
+      .catch((error) => {
+        console.log(error);
+        setError(error);
+      })
+      .finally(() => setIsRequesting(false));
+  };
   return (
     <div className="all">
       <div className="a">
@@ -9,21 +50,38 @@ const Login = () => {
       <div className="b">
         <div className="loginbox">
           <img className="logobox" src={logo} alt="logo" />
+          <div className="errordiv">
+            {error && <div className="errormessage">{error.message}</div>}
+          </div>
 
-          <input className="input" type="text" placeholder="USERNAME" />
+          <input
+            className="input"
+            type={"text"}
+            placeholder="E-MAIL"
+            value={email}
+            onChange={handleEmail}
+          />
 
-          <input className="input" type="password" placeholder="PASSWORD" />
-          <button className="btn" onClick>
+          <input
+            className="input"
+            type={"password"}
+            value={password}
+            onChange={handlePassword}
+            placeholder="PASSWORD"
+          />
+          <button
+            className="btn"
+            onClick={handleSubmit}
+            disabled={email === "" || password.length < 6 || isRequesting}
+          >
             LOGIN
           </button>
           <h3 className="text">Don't Have Account?</h3>
-          <button className="btn1" onClick>
+          <button className="btn1" value={register} onClick={handleRegister}>
             SIGN UP HERE
           </button>
         </div>
       </div>
     </div>
   );
-};
-
-export default Login;
+}
