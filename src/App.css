@@ -134,7 +134,6 @@
 .errormessage {
   color: red;
   font-size: 21px;
-  margin-right: 1rem;
 }
 
 @keyframes flip {
@@ -207,5 +206,13 @@
 
   .btn1 {
     width: 80%;
+  }
+
+  .errordiv {
+    width: 105%;
+  }
+
+  .errormessage {
+    font-size: 17px;
   }
 }
