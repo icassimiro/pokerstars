@@ -49,37 +49,46 @@ export default function Login() {
       </div>
       <div className="b">
         <div className="loginbox">
-          <img className="logobox" src={logo} alt="logo" />
+          <div className="logodiv">
+            <img className="logobox" src={logo} alt="logo" />
+          </div>
           <div className="errordiv">
             {error && <div className="errormessage">{error.message}</div>}
           </div>
+          <div className="inputs">
+            <input
+              className="input"
+              type={"text"}
+              placeholder="E-MAIL"
+              value={email}
+              onChange={handleEmail}
+            />
 
-          <input
-            className="input"
-            type={"text"}
-            placeholder="E-MAIL"
-            value={email}
-            onChange={handleEmail}
-          />
-
-          <input
-            className="input"
-            type={"password"}
-            value={password}
-            onChange={handlePassword}
-            placeholder="PASSWORD"
-          />
-          <button
-            className="btn"
-            onClick={handleSubmit}
-            disabled={email === "" || password.length < 6 || isRequesting}
-          >
-            LOGIN
-          </button>
-          <h3 className="text">Don't have an account?</h3>
-          <button className="btn1" value={register} onClick={handleRegister}>
-            SIGN UP HERE
-          </button>
+            <input
+              className="input"
+              type={"password"}
+              value={password}
+              onChange={handlePassword}
+              placeholder="PASSWORD"
+            />
+          </div>
+          <div className="divlogin">
+            <button
+              className="btn"
+              onClick={handleSubmit}
+              disabled={email === "" || password.length < 6 || isRequesting}
+            >
+              LOGIN
+            </button>
+          </div>
+          <div className="acctext">
+            <h3 className="text">Don't have an account?</h3>
+          </div>
+          <div className="divsignup">
+            <button className="btn1" value={register} onClick={handleRegister}>
+              SIGN UP HERE
+            </button>
+          </div>
         </div>
       </div>
     </div>

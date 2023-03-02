@@ -47,10 +47,17 @@
   margin-left: 4rem;
 }
 
+.inputs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .input {
   width: 70%;
   height: 5vh;
-  margin-left: 3rem;
+  margin-left: 3.5rem;
   border: none;
   border-radius: 3px;
   font-size: large;
@@ -58,17 +65,32 @@
   text-align: center;
 }
 
+.logodiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .logobox {
-  width: 45px;
-  margin-left: 9.5rem;
-  margin-bottom: 3rem;
+  width: 20%;
+}
+
+.divsignup {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.divlogin {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .btn {
-  width: 45%;
-  height: 6vh;
-  margin-left: 6rem;
-  margin-top: 3rem;
+  width: 30%;
+  height: 5vh;
+  margin-top: 2rem;
   background-color: rgb(129, 129, 129);
   font-size: large;
   border-radius: 5px;
@@ -78,10 +100,9 @@
 }
 
 .btn1 {
-  width: 75%;
-  height: 6vh;
+  width: 50%;
+  height: 4vh;
   margin-top: 2rem;
-  margin-left: 2.7rem;
   background-color: rgb(255, 32, 32);
   font-size: large;
   color: black;
@@ -90,8 +111,13 @@
   cursor: pointer;
 }
 
+.acctext {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .text {
-  margin-left: 3.8rem;
   font-size: 22px;
   margin-top: 2rem;
   color: rgb(177, 177, 177);
@@ -117,5 +143,69 @@
   }
   100% {
     transform: rotateY(180deg);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .title {
+    width: 152%;
+  }
+
+  .all {
+    width: 110%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .loginbox {
+    width: 80%;
+    margin-right: 10rem;
+  }
+
+  .logo {
+    width: 10%;
+  }
+
+  .a {
+    width: 140%;
+    padding-bottom: 4rem;
+  }
+
+  .b {
+    width: 60%;
+  }
+
+  .logobox {
+    width: 50%;
+  }
+
+  .inputs {
+    width: 50%;
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  .btn {
+    width: 50%;
+  }
+
+  .acctext {
+    width: 105%;
+  }
+
+  .text {
+    font-size: 17px;
+  }
+
+  .divsignup {
+    width: 100%;
+  }
+
+  .btn1 {
+    width: 80%;
   }
 }
