@@ -38,7 +38,7 @@
 .loginbox {
   width: 40%;
   height: 60vh;
-  border: 1px solid rgb(255, 32, 32);
+  border: 1px solid rgb(129, 129, 129);
   display: flex;
   justify-content: center;
   padding: 8rem;
@@ -52,6 +52,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  gap: 2rem;
 }
 
 .input {
@@ -63,6 +64,7 @@
   font-size: large;
   font-weight: bold;
   text-align: center;
+  border: 1px solid rgb(129, 129, 129);
 }
 
 .logodiv {
@@ -88,37 +90,40 @@
 }
 
 .btn {
-  width: 30%;
-  height: 5vh;
+  width: 40%;
+  height: 4vh;
   margin-top: 2rem;
   background-color: rgb(129, 129, 129);
-  font-size: large;
+  font-size: 19px;
   border-radius: 5px;
   color: whitesmoke;
   cursor: pointer;
   border: none;
+  margin-left: 0.3rem;
 }
 
 .btn1 {
   width: 50%;
-  height: 4vh;
+  height: 5vh;
   margin-top: 2rem;
   background-color: rgb(255, 32, 32);
-  font-size: large;
+  font-size: 18px;
   color: black;
   border-radius: 5px;
   border: none;
   cursor: pointer;
+  margin-left: 1rem;
 }
 
 .acctext {
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-left: 0.5rem;
 }
 
 .text {
-  font-size: 22px;
+  font-size: 20px;
   margin-top: 2rem;
   color: rgb(177, 177, 177);
   display: flex;
@@ -145,74 +150,122 @@
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1660px) {
   .title {
-    width: 152%;
+    margin: 0;
   }
 
   .all {
-    width: 110%;
-    height: 100vh;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-  }
-
-  .loginbox {
-    width: 80%;
-    margin-right: 10rem;
-  }
-
-  .logo {
-    width: 10%;
+    align-items: center;
   }
 
   .a {
-    width: 140%;
-    padding-bottom: 4rem;
+    margin-left: 2rem;
+    height: 50vh;
+    margin: 0;
+  }
+
+  .logodiv {
+    margin-left: 0.5rem;
+  }
+
+  .logo {
+    width: 20%;
   }
 
   .b {
-    width: 60%;
+    width: 50%;
   }
 
-  .logobox {
-    width: 50%;
+  .loginbox {
+    width: 60%;
+    height: 50vh;
+    margin: 0;
+  }
+
+  .errordiv {
+    width: 100%;
+  }
+
+  .errormessage {
+    font-size: 15px;
+    width: 100%;
+    font-weight: bold;
+    justify-content: center;
+    display: flex;
+    margin-left: 1rem;
   }
 
   .inputs {
-    width: 50%;
+    width: 100%;
   }
 
   .input {
     width: 100%;
+    height: 3.5vh;
+    margin-left: 0.6rem;
+    border: none;
   }
 
   .btn {
-    width: 50%;
+    width: 30%;
+    font-weight: bold;
+    margin-left: 1rem;
   }
 
   .acctext {
-    width: 105%;
-  }
-
-  .text {
-    font-size: 17px;
-  }
-
-  .divsignup {
     width: 100%;
   }
 
+  .text {
+    width: 100%;
+    font-size: 15px;
+    justify-content: center;
+    display: flex;
+  }
+
   .btn1 {
-    width: 80%;
+    width: 40%;
+    font-size: 15px;
+    font-weight: bold;
+    height: 6vh;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .title {
+    margin: 0;
+    margin-left: 2.5rem;
   }
 
-  .errordiv {
-    width: 105%;
+  .a {
+    width: 100%;
+    margin: 0;
   }
 
-  .errormessage {
-    font-size: 17px;
+  .logo {
+    width: 20%;
+    margin-left: 5rem;
+  }
+
+  .b {
+    width: 79%;
+    margin-right: 6rem;
+  }
+
+  .loginbox {
+    width: 70%;
+    margin: ;
+    border: none;
+  }
+
+  .btn {
+    width: 35%;
+    font-size: 13px;
+  }
+
+  .btn1 {
+    width: 55%;
+    height: 5vh;
   }
 }
