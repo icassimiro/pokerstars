@@ -32,12 +32,12 @@
 .b {
   width: 50%;
   height: 90vh;
-  display: inline-block;
+  align-items: center;
 }
 
 .loginbox {
-  width: 40%;
-  height: 60vh;
+  width: 30%;
+  height: 50vh;
   border: 1px solid rgb(129, 129, 129);
   display: flex;
   justify-content: center;
@@ -56,15 +56,14 @@
 }
 
 .input {
-  width: 70%;
-  height: 5vh;
-  margin-left: 3.5rem;
+  width: 72%;
+  height: 4.2vh;
+  margin-left: 2.3rem;
   border: none;
   border-radius: 3px;
-  font-size: large;
+  font-size: 17px;
   font-weight: bold;
   text-align: center;
-  border: 1px solid rgb(129, 129, 129);
 }
 
 .logodiv {
@@ -94,36 +93,33 @@
   height: 4vh;
   margin-top: 2rem;
   background-color: rgb(129, 129, 129);
-  font-size: 19px;
+  font-size: 17.5px;
   border-radius: 5px;
   color: whitesmoke;
   cursor: pointer;
   border: none;
-  margin-left: 0.3rem;
 }
 
 .btn1 {
-  width: 50%;
+  width: 60%;
   height: 5vh;
   margin-top: 2rem;
   background-color: rgb(255, 32, 32);
-  font-size: 18px;
+  font-size: 17.5px;
   color: black;
   border-radius: 5px;
   border: none;
   cursor: pointer;
-  margin-left: 1rem;
 }
 
 .acctext {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-left: 0.5rem;
 }
 
 .text {
-  font-size: 20px;
+  font-size: 17.5px;
   margin-top: 2rem;
   color: rgb(177, 177, 177);
   display: flex;
@@ -138,7 +134,7 @@
 
 .errormessage {
   color: red;
-  font-size: 21px;
+  font-size: 17.5px;
 }
 
 @keyframes flip {
@@ -151,10 +147,6 @@
 }
 
 @media screen and (max-width: 1660px) {
-  .title {
-    margin: 0;
-  }
-
   .all {
     flex-direction: column;
     align-items: center;
@@ -163,11 +155,6 @@
   .a {
     margin-left: 2rem;
     height: 50vh;
-    margin: 0;
-  }
-
-  .logodiv {
-    margin-left: 0.5rem;
   }
 
   .logo {
@@ -175,13 +162,15 @@
   }
 
   .b {
-    width: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .loginbox {
-    width: 60%;
+    width: 20%;
     height: 50vh;
-    margin: 0;
+    border: 1px solid rgb(129, 129, 129);
   }
 
   .errordiv {
@@ -189,7 +178,7 @@
   }
 
   .errormessage {
-    font-size: 15px;
+    font-size: 13px;
     width: 100%;
     font-weight: bold;
     justify-content: center;
@@ -204,14 +193,16 @@
   .input {
     width: 100%;
     height: 3.5vh;
-    margin-left: 0.6rem;
     border: none;
+    margin: 0;
+    font-size: 17px;
   }
 
   .btn {
-    width: 30%;
+    width: 45%;
     font-weight: bold;
-    margin-left: 1rem;
+
+    font-size: 15px;
   }
 
   .acctext {
@@ -220,24 +211,20 @@
 
   .text {
     width: 100%;
-    font-size: 15px;
+    font-size: 17px;
     justify-content: center;
     display: flex;
   }
 
   .btn1 {
-    width: 40%;
+    width: 65%;
     font-size: 15px;
     font-weight: bold;
-    height: 6vh;
+    height: 5vh;
   }
 }
-@media screen and (max-width: 1000px) {
-  .title {
-    margin: 0;
-    margin-left: 2.5rem;
-  }
 
+@media screen and (max-width: 1000px) {
   .a {
     width: 100%;
     margin: 0;
@@ -245,27 +232,80 @@
 
   .logo {
     width: 20%;
-    margin-left: 5rem;
   }
 
   .b {
-    width: 79%;
-    margin-right: 6rem;
+    width: 70%;
+    margin: 0;
+    align-items: center;
   }
 
   .loginbox {
     width: 70%;
-    margin: ;
-    border: none;
+    border: 1px solid rgb(129, 129, 129);
+    margin: 0;
   }
 
   .btn {
-    width: 35%;
+    width: 38%;
+    font-size: 14px;
+  }
+
+  .btn1 {
+    height: 5vh;
+    width: 50%;
+  }
+
+  .inputs {
+    width: 100%;
+    align-items: center;
+  }
+
+  .input {
+    width: 60%;
+    margin-left: 0.1rem;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .b {
+    width: 100%;
+  }
+
+  .acctext {
+    width: 100%;
+  }
+
+  .input {
+    font-size: 12px;
+  }
+
+  .loginbox {
+    border: none;
+  }
+
+  .text {
+    font-size: 10px;
+    font-weight: 900;
+  }
+
+  .errordiv {
+    width: 100%;
+  }
+
+  .errormessage {
+    font-size: 8px;
+    font-weight: 900;
+  }
+
+  .btn {
+    width: 40%;
     font-size: 13px;
   }
 
   .btn1 {
-    width: 55%;
-    height: 5vh;
+    width: 47%;
+    font-size: 12px;
   }
 }
