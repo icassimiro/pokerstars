@@ -199,9 +199,8 @@
   }
 
   .btn {
-    width: 45%;
+    width: 35%;
     font-weight: bold;
-
     font-size: 15px;
   }
 
@@ -247,7 +246,7 @@
   }
 
   .btn {
-    width: 38%;
+    width: 30%;
     font-size: 14px;
   }
 
@@ -269,8 +268,16 @@
 }
 
 @media screen and (max-width: 760px) {
+  .all {
+    overflow: hidden;
+  }
+
   .b {
-    width: 100%;
+    width: 200%;
+  }
+
+  .logobox {
+    width: 10%;
   }
 
   .acctext {
@@ -278,7 +285,8 @@
   }
 
   .input {
-    font-size: 12px;
+    font-size: 13px;
+    width: 28%;
   }
 
   .loginbox {
@@ -286,8 +294,7 @@
   }
 
   .text {
-    font-size: 10px;
-    font-weight: 900;
+    font-size: 15px;
   }
 
   .errordiv {
@@ -295,17 +302,20 @@
   }
 
   .errormessage {
-    font-size: 8px;
-    font-weight: 900;
+    font-size: 15px;
   }
 
   .btn {
-    width: 40%;
-    font-size: 13px;
+    width: 15%;
+    font-size: 15 px;
   }
 
   .btn1 {
-    width: 47%;
-    font-size: 12px;
+    width: 22%;
+    font-size: 14px;
+  }
+
+  .title {
+    overflow: hidden;
   }
 }
